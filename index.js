@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use('/api/auth',require('./routes/auth.js'))
 app.use('/api/add',require('./routes/Items.js'))
-
+app.use('/api/oders',require('./routes/order.js'))
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
